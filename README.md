@@ -1,5 +1,5 @@
 
-# <img src="./telegram.link.png" width="40"/> telegram.link 
+# <img src="./telegram.link.png" width="40"/> @goodmind/telegram.link 
 [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url] [![Climate Status][climate-image]][climate-url] [![Dependency Status][gemnasium-image]][gemnasium-url]
 [![Sauce Test Status][sauce-image]][sauce-url]
 
@@ -57,13 +57,13 @@ _See the documentation page on the [wiki](https://github.com/enricostara/telegra
 
 The whole library is split in **three projects**:
   
-- **telegram.link** (this library): is the main project and provides the **highest-level interface** to communicate with the Telegram data-center. 
+- **@goodmind/telegram.link** (this library): is the main project and provides the **highest-level interface** to communicate with the Telegram data-center. 
 When you write your **_'telegram-like-app'_** you should deal only with this module.
 
-- [**telegram-mt-node**](https://github.com/goodmind/telegram-mt-node) (dependency): implements the **Telegram Mobile Protocol** [(MTProto)](https://core.telegram.org/mtproto),
+- [**@goodmind/telegram-mt-node**](https://github.com/goodmind/telegram-mt-node) (dependency): implements the **Telegram Mobile Protocol** [(MTProto)](https://core.telegram.org/mtproto),
 the protocol level to establish a secure communication with the Telegram cloud.
 
-- [**telegram-tl-node**](https://github.com/goodmind/telegram-tl-node) (dependency): implements the core [**TypeLanguage types**](https://core.telegram.org/mtproto/TL) and 
+- [**@goodmind/telegram-tl-node**](https://github.com/goodmind/telegram-tl-node) (dependency): implements the core [**TypeLanguage types**](https://core.telegram.org/mtproto/TL) and 
 a **TypeBuilder** class that writes **Type classes and functions** in pure javascript parsing TypeLanguage [schemas](https://core.telegram.org/schema). 
 TypeLanguage types represent the **building blocks of the Telegram protocol**.
 
