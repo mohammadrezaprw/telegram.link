@@ -6,6 +6,8 @@
 
 **ALPHA SOFTWARE**
 
+Contant me in Telegram [@goodmind](https://telegram.me/goodmind)
+
 ###_telegram.link_ is a Telegram API library for
 
 - **Hybrid Mobile Apps** (phone and tablet)
