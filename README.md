@@ -60,10 +60,10 @@ The whole library is split in **three projects**:
 - **telegram.link** (this library): is the main project and provides the **highest-level interface** to communicate with the Telegram data-center. 
 When you write your **_'telegram-like-app'_** you should deal only with this module.
 
-- [**telegram-mt-node**](https://github.com/enricostara/telegram-mt-node) (dependency): implements the **Telegram Mobile Protocol** [(MTProto)](https://core.telegram.org/mtproto),
+- [**telegram-mt-node**](https://github.com/goodmind/telegram-mt-node) (dependency): implements the **Telegram Mobile Protocol** [(MTProto)](https://core.telegram.org/mtproto),
 the protocol level to establish a secure communication with the Telegram cloud.
 
-- [**telegram-tl-node**](https://github.com/enricostara/telegram-tl-node) (dependency): implements the core [**TypeLanguage types**](https://core.telegram.org/mtproto/TL) and 
+- [**telegram-tl-node**](https://github.com/goodmind/telegram-tl-node) (dependency): implements the core [**TypeLanguage types**](https://core.telegram.org/mtproto/TL) and 
 a **TypeBuilder** class that writes **Type classes and functions** in pure javascript parsing TypeLanguage [schemas](https://core.telegram.org/schema). 
 TypeLanguage types represent the **building blocks of the Telegram protocol**.
 
@@ -82,7 +82,7 @@ browserify-transform to rewrites the require() for browser.
 
 To get the complete package:
 ```bash
-$ git clone --branch=master git://github.com/enricostara/telegram.link.git
+$ git clone --branch=master git://github.com/goodmind/telegram.link.git
 $ cd telegram.link
 $ npm install
 ```
@@ -90,7 +90,7 @@ $ npm install
 To install the library as dependency for your app (no tests, no docs, no dev files.. only pure code!):
 ```bash
 $ cd YourApp
-$ npm install --save telegram.link
+$ npm install --save @goodmind/telegram.link
 ```
 
 
