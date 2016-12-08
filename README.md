@@ -6,7 +6,7 @@
 
 **ALPHA SOFTWARE**
 
-Contant me in Telegram [@goodmind](https://telegram.me/goodmind)
+Contact me in Telegram [@goodmind](https://telegram.me/goodmind)
 
 ###_telegram.link_ is a Telegram API library for
 
