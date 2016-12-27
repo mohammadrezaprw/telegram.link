@@ -129,11 +129,11 @@ Logo crafted by [Diego Pasquali](http://dribbble.com/diegopq)
 The project is released under the [MIT license](./LICENSE) 
 
 
-[npm-url]: https://www.npmjs.org/package/telegram.link
-[npm-image]: https://badge.fury.io/js/telegram.link.svg
+[npm-url]: https://www.npmjs.org/package/@goodmind/telegram.link
+[npm-image]: https://badge.fury.io/js/%40goodmind%2Ftelegram.link.svg
 
-[travis-url]: https://travis-ci.org/enricostara/telegram.link
-[travis-image]: https://travis-ci.org/enricostara/telegram.link.svg?branch=master
+[travis-url]: https://travis-ci.org/goodmind/telegram.link
+[travis-image]: https://travis-ci.org/goodmind/telegram.link.svg?branch=master
 
 [climate-url]: https://codeclimate.com/github/enricostara/telegram.link
 [climate-image]: https://codeclimate.com/github/enricostara/telegram.link/badges/gpa.svg
