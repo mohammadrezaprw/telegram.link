@@ -49,7 +49,7 @@
     "node": ">0.10.30"
   },
   "scripts": {
-    "test": "DEBUG=-mocha*,-TypeBuilder,* ./node_modules/gulp/bin/gulp.js test",
+    "test": "./node_modules/gulp/bin/gulp.js test",
     "coveralls": "DEBUG=-mocha*,* istanbul cover ./node_modules/gulp/bin/gulp.js cover && cat ./coverage/lcov.info | coveralls && codeclimate < ./coverage/lcov.info && rm -rf ./coverage",
     "zuul": "zuul -- ./test/**",
     "doc": "./node_modules/gulp/bin/gulp.js doc"
