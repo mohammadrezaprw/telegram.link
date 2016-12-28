@@ -99,7 +99,7 @@ and <a href="https://core.telegram.org/methods#registration-authorization">Api M
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-6">&#182;</a>
               </div>
-              <p>Access only via Client object and <code>auth</code> instance property</p>
+              <p>Access only via Client object (like client.auth) and <code>auth</code> instance property</p>
 
             </div>
             
@@ -200,23 +200,23 @@ and <a href="https://core.telegram.org/methods#registration-authorization">Api M
 
             </div>
             
-            <div class="content"><div class='highlight'><pre>Auth.prototype.sendCode = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">phone_number, sms_type, lang_code, callback</span>) </span>{
+            <div class="content"><div class='highlight'><pre>Auth.prototype.sendCode = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">phone_number, current_number, allow_flashcall, callback</span>) </span>{
     <span class="hljs-keyword">if</span> (callback) {
         <span class="hljs-keyword">this</span>.client.once(<span class="hljs-string">'sendCode'</span>, callback);
     }
     <span class="hljs-keyword">var</span> props = {
-        phone_number: phone_number,
-        sms_type: sms_type,
-        api_id: <span class="hljs-keyword">this</span>.client._app.id,
-        api_hash: <span class="hljs-keyword">this</span>.client._app.hash,
-        lang_code: lang_code
+        <span class="hljs-attr">phone_number</span>: phone_number,
+        <span class="hljs-attr">allow_flashcall</span>: allow_flashcall,
+        <span class="hljs-attr">current_number</span>: current_number ? <span class="hljs-keyword">new</span> api.type.BoolTrue() : <span class="hljs-keyword">new</span> api.type.BoolFalse(),
+        <span class="hljs-attr">api_id</span>: <span class="hljs-keyword">this</span>.client._app.id,
+        <span class="hljs-attr">api_hash</span>: <span class="hljs-keyword">this</span>.client._app.hash
     };
     <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.client.isReady(<span class="hljs-literal">true</span>)) {
         <span class="hljs-keyword">try</span> {
             api.service.auth.sendCode({
-                props: props,
-                channel: <span class="hljs-keyword">this</span>.client._channel,
-                callback: utility.createEventEmitterCallback(<span class="hljs-string">'sendCode'</span>, <span class="hljs-keyword">this</span>.client)
+                <span class="hljs-attr">props</span>: props,
+                <span class="hljs-attr">channel</span>: <span class="hljs-keyword">this</span>.client._channel,
+                <span class="hljs-attr">callback</span>: utility.createEventEmitterCallback(<span class="hljs-string">'sendCode'</span>, <span class="hljs-keyword">this</span>.client)
             });
         } <span class="hljs-keyword">catch</span> (err) {
             <span class="hljs-keyword">this</span>.client.emit(<span class="hljs-string">'error'</span>, err);

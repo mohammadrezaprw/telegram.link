@@ -77,9 +77,9 @@ http:<span class="hljs-comment">//telegram.link</span>
     <span class="hljs-keyword">if</span> (emitter.isReady(<span class="hljs-literal">true</span>)) {
         <span class="hljs-keyword">try</span> {
             service({
-                props: props,
-                channel: channel,
-                callback: createEventEmitterCallback(eventName, emitter)
+                <span class="hljs-attr">props</span>: props,
+                <span class="hljs-attr">channel</span>: channel,
+                <span class="hljs-attr">callback</span>: createEventEmitterCallback(eventName, emitter)
             });
         } <span class="hljs-keyword">catch</span> (err) {
             emitter.emit(<span class="hljs-string">'error'</span>, err);

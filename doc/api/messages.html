@@ -98,7 +98,7 @@ http:<span class="hljs-comment">//telegram.link</span>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-6">&#182;</a>
               </div>
-              <p>Access only via Client object and <code>messages</code> instance property</p>
+              <p>Access only via Client object (like client.messages) and <code>messages</code> instance property</p>
 
             </div>
             
@@ -269,9 +269,9 @@ http:<span class="hljs-comment">//telegram.link</span>
 
  <span class="hljs-keyword">var</span> client = api.createClient( ...
 
- <span class="hljs-keyword">var</span> peer = <span class="hljs-keyword">new</span> api.type.InputPeerContact({
-      props: {
-           user_id: <span class="hljs-number">12345678</span>
+ var peer = <span class="hljs-keyword">new</span> api.type.InputPeerContact({
+      <span class="hljs-attr">props</span>: {
+           <span class="hljs-attr">user_id</span>: <span class="hljs-number">12345678</span>
       }
  });
 
@@ -429,9 +429,9 @@ http:<span class="hljs-comment">//telegram.link</span>
 
  <span class="hljs-keyword">var</span> client = api.createClient( ...
 
- <span class="hljs-keyword">var</span> peer = <span class="hljs-keyword">new</span> api.type.InputPeerContact({
-      props: {
-           user_id: <span class="hljs-number">12345678</span>
+ var peer = <span class="hljs-keyword">new</span> api.type.InputPeerContact({
+      <span class="hljs-attr">props</span>: {
+           <span class="hljs-attr">user_id</span>: <span class="hljs-number">12345678</span>
       }
  });
 
