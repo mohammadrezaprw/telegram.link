@@ -1,6 +1,6 @@
 {
   "name": "@goodmind/telegram.link",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Telegram API library",
   "publishConfig": {
     "access": "public"
