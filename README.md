@@ -1,5 +1,9 @@
+# Deprecation Notice
+**Don’t use this for new projects.**  
+**[telegram-mtproto](https://github.com/zerobias/telegram-mtproto) is much more advanced and has a better API.**
 
-# <img src="./telegram.link.png" width="40"/> @goodmind/telegram.link 
+<s><img src="./telegram.link.png" width="40"/> @goodmind/telegram.link</s>
+==========================================================================
 [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url] [![Climate Status][climate-image]][climate-url] [![Dependency Status][gemnasium-image]][gemnasium-url]
 [![Sauce Test Status][sauce-image]][sauce-url]
 
