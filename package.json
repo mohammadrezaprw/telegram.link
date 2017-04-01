@@ -20,8 +20,8 @@
     "url": "https://github.com/goodmind/telegram.link/issues"
   },
   "dependencies": {
-    "@goodmind/telegram-mt-node": "^0.9.11",
-    "@goodmind/telegram-tl-node": "^0.12.4",
+    "@goodmind/telegram-mt-node": "^0.9.16",
+    "@goodmind/telegram-tl-node": "^0.12.6",
     "colors": "1.1.2",
     "es6-promise": "2.3.0",
     "get-flow": "^0.3.0",
