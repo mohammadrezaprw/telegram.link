@@ -2,6 +2,8 @@
 **Don’t use this for new projects.**  
 **[telegram-mtproto](https://github.com/zerobias/telegram-mtproto) is much more advanced and has a better API.**
 
+**Also check [treact](https://github.com/goodmind/treact). My attempt to write Telegram client in React.js**
+
 <s><img src="./telegram.link.png" width="40"/> @goodmind/telegram.link</s>
 ==========================================================================
 [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url] [![Climate Status][climate-image]][climate-url] [![Dependency Status][gemnasium-image]][gemnasium-url]
